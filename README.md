@@ -1,2 +1,3 @@
 # d2l-study
-my study d2l notebook
+
+This project is my notes for learning d2l.
