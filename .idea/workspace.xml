@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f16f161e-1230-4938-bff0-eae323907727" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/04数据操作+数据预处理/data/house_tiny_practise.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/04数据操作+数据预处理/practice/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05线性代数/practice/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07.5概率/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07.5概率/practice/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07自动求导/practice/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08线性回归+基础优化算法/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/d2l-study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/d2l-study.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09Softmax回归+损失函数+图片分类数据集/data/FashionMNIST/raw/t10k-images-idx3-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09Softmax回归+损失函数+图片分类数据集/data/FashionMNIST/raw/t10k-images-idx3-ubyte.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09Softmax回归+损失函数+图片分类数据集/data/FashionMNIST/raw/t10k-labels-idx1-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09Softmax回归+损失函数+图片分类数据集/data/FashionMNIST/raw/t10k-labels-idx1-ubyte.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09Softmax回归+损失函数+图片分类数据集/data/FashionMNIST/raw/train-images-idx3-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09Softmax回归+损失函数+图片分类数据集/data/FashionMNIST/raw/train-images-idx3-ubyte.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09Softmax回归+损失函数+图片分类数据集/data/FashionMNIST/raw/train-labels-idx1-ubyte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09Softmax回归+损失函数+图片分类数据集/data/FashionMNIST/raw/train-labels-idx1-ubyte.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09Softmax回归+损失函数+图片分类数据集/softmax回归的从零开始实现/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09Softmax回归+损失函数+图片分类数据集/图像分类数据集/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04数据操作+数据预处理/data/house_tiny.csv" beforeDir="false" afterPath="$PROJECT_DIR$/04数据操作+数据预处理/data/house_tiny.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,10 +60,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/09Softmax回归+损失函数+图片分类数据集" />
+      <recent name="$PROJECT_DIR$/09Softmax回归+损失函数+图片分类数据集/图像分类数据集" />
       <recent name="$PROJECT_DIR$/04数据操作+数据预处理/数据操作" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.main (4)">
+  <component name="RunManager" selected="Python.main (1)">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="d2l-study" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -85,36 +88,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="main (2)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="d2l-study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/07自动求导/practice" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/09Softmax回归+损失函数+图片分类数据集/softmax回归的从零开始实现" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/07自动求导/practice/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="main (3)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="d2l-study" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/07.5概率" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/07.5概率/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09Softmax回归+损失函数+图片分类数据集/softmax回归的从零开始实现/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -127,6 +111,9 @@
       <module name="d2l-study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/07.5概率/practice" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -146,18 +133,15 @@
       <module name="d2l-study" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/04数据操作+数据预处理/practise" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/09Softmax回归+损失函数+图片分类数据集" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/04数据操作+数据预处理/practise/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09Softmax回归+损失函数+图片分类数据集/main.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -230,13 +214,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="python" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="d2l-study" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/09Softmax回归+损失函数+图片分类数据集" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/09Softmax回归+损失函数+图片分类数据集/python.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main (4)" />
-        <item itemvalue="Python.main (3)" />
-        <item itemvalue="Python.main (2)" />
-        <item itemvalue="Python.main (6)" />
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.python" />
         <item itemvalue="Python.main (5)" />
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.main (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -259,6 +262,9 @@
       <workItem from="1681130405714" duration="366000" />
       <workItem from="1681176698874" duration="6027000" />
       <workItem from="1681291865684" duration="3863000" />
+      <workItem from="1681515836157" duration="9554000" />
+      <workItem from="1681745629313" duration="24000" />
+      <workItem from="1681780282842" duration="12664000" />
     </task>
     <servers />
   </component>
