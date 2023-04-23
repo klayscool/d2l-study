@@ -47,15 +47,16 @@ def net(X):
 # 4 定义损失函数
 def cross_entropy(y_hat, y):
 
-    # print()
-    # print("--------------")
-    # print("y_hat.value:", y_hat)
-    # print("y.value:", y)
-    # print("range(len(y_hat)).value:", range(len(y_hat)))
-    # print("y_hat[range(len(y_hat)), y].value:", y_hat[range(len(y_hat)), y])
-    # # print("-torch.log(y_hat[range(len(y_hat)), y]).shape:", (-torch.log(y_hat[range(len(y_hat)), y]))).shape
-    # print("--------------")
-    # print()
+    print()
+    print("--------------")
+    print("y_hat.value:", y_hat)
+    print("y.value:", y)
+    print("range(len(y_hat)).value:", range(len(y_hat)))
+    print("y_hat[range(len(y_hat)), y].value:", y_hat[range(len(y_hat)), y])
+    print("-torch.log(y_hat[range(len(y_hat)), y]).value:", (-torch.log(y_hat[range(len(y_hat)), y])))
+    print("-torch.log(y_hat[range(len(y_hat)), y]).size:", (-torch.log(y_hat[range(len(y_hat)), y])).shape)
+    print("--------------")
+    print()
 
     return -torch.log(y_hat[range(len(y_hat)), y])
 
@@ -123,8 +124,8 @@ def train_epoch_ch3(net, train_iter, loss, updater): #@save
         # print("y_hat.shape:", y_hat.shape)
         # print("y_hat.value:", y_hat)
         # print("y_hat.sum(1).value:", y_hat.sum(1, keepdim=True))
-        # print("y.shape:", y)
-        # print("y.value:", y)
+        print("y.shape:", y)
+        print("y.value:", y)
 
 
         l = loss(y_hat, y)
@@ -136,6 +137,11 @@ def train_epoch_ch3(net, train_iter, loss, updater): #@save
             updater.step()
         else:
             # 使用定制的优化器和损失函数
+            print("train_epoch_ch3.l.value:", l)
+            print("train_epoch_ch3.l.shape:", l.shape)
+            print("train_epoch_ch3.l.sum().value:", l.sum())
+            print("train_epoch_ch3.l.sum().shape:", l.sum().shape)
+
             l.sum().backward()
             updater(X.shape[0])
 
@@ -145,8 +151,8 @@ def train_epoch_ch3(net, train_iter, loss, updater): #@save
     # print("metric[0] / metric[2]", metric[0] / metric[2])
     # print("metric[1] / metric[2]", metric[1] / metric[2])
 
-    # print("Start sleep 3600s.")
-    # time.sleep(3600)
+    print("Start sleep 3600s.")
+    time.sleep(3600)
 
     # 返回训练损失和训练精度
     return metric[0] / metric[2], metric[1] / metric[2]
