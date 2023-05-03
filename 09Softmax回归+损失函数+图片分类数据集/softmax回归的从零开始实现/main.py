@@ -42,7 +42,11 @@ def net(X):
     # print("torch.matmul(X.reshape((-1, W.shape[0])), W) shape:", torch.matmul(X.reshape((-1, W.shape[0])), W).shape)
     # print("torch.matmul(X.reshape((-1, W.shape[0])), W) + b shape:", (torch.matmul(X.reshape((-1, W.shape[0])), W) + b).shape)
 
-    return softmax(torch.matmul(X.reshape((-1, W.shape[0])), W) + b)
+    res = softmax(torch.matmul(X.reshape((-1, W.shape[0])), W) + b)
+    print('net result:', res)
+    print("net sum:", torch.sum(res, dim=1))
+
+    return res
 
 # 4 定义损失函数
 def cross_entropy(y_hat, y):
