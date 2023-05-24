@@ -70,16 +70,25 @@ def rnn(inputs, state, params):
     # X的形状：(批量大小，词表大小)
     # print('3 rnn inputs.shape:', inputs.shape)
     for X in inputs:
-        # print('3 rnn X:', X)
-        # print('3 rnn X.shape:', X.shape)
+
+        print('3 rnn X:', X)
+        print('3 rnn X.shape:', X.shape)
+
         H = torch.tanh(torch.mm(X, W_xh) + torch.mm(H, W_hh) + b_h)
+        print('3 rnn H:', H)
+        print('3 rnn H.shape:', H.shape)
+
         Y = torch.mm(H, W_hq) + b_q
         print('3 rnn Y.shape:', Y.shape)
 
         outputs.append(Y)
-        print('3 rnn outputs:', outputs)
+        # print('3 rnn outputs:', outputs)
 
+
+    print('3 rnn H:', H)
+    print('3 rnn H.shape:', H.shape)
     time.sleep(3600)
+
     return torch.cat(outputs, dim=0), (H,)
 
 class RNNModelScratch: #@save
