@@ -47,6 +47,7 @@ class MultiHeadAttention(nn.Module):
         output_concat = transpose_output(output, self.num_heads)
         return self.W_o(output_concat)
 
+
 #@save
 def transpose_qkv(X, num_heads):
     """为了多注意力头的并行计算而变换形状"""
@@ -66,8 +67,11 @@ def transpose_qkv(X, num_heads):
 
 #@save
 def transpose_output(X, num_heads):
+    print('transpose_output X.shape:', X.shape)
     """逆转transpose_qkv函数的操作"""
     X = X.reshape(-1, num_heads, X.shape[1], X.shape[2])
+    print('transpose_output X.shape:', X.shape)
+
     X = X.permute(0, 2, 1, 3)
     return X.reshape(X.shape[0], X.shape[1], -1)
 
